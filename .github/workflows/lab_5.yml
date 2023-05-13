@@ -16,9 +16,9 @@ jobs:
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: swe.umbc.edu
+          server: gl.umbc.edu
           username: ${{secrets.ftp_username}}
           password: ${{ secrets.ftp_password }}
           local_path: './*'
-          remote_path: '/~wyattw1'
+          remote_path: 'https:swe.umbc.edu/~wyattw1/swe2023'
           sftp_only: true
